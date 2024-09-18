@@ -35,3 +35,22 @@ This README contains benchmarks for the `volsort` sorting utility, comparing fou
 | QUICK   | 1000000  | 0.69s             | 1.702             |
 | QUICK   | 10000000 | 7.11s             | 17.740            |
 
+
+## Key Findings
+
+1. Performance Comparison:
+   - All four methods (STL, Qsort, Merge, Quick) show similar time performance.
+   - STL and Qsort are slightly more memory-efficient for smaller inputs.
+   - Custom implementations (Merge, Quick) show comparable memory usage for larger inputs.
+
+2. Theoretical vs. Actual Performance:
+   - Results align with expected O(n log n) average-case time complexity.
+   - Small variations likely due to implementation details and hardware factors.
+
+3. Best Sorting Mode:
+   - STL sort is recommended for its balance of performance, efficiency, and ease of use.
+   - The other programs don't offer significant advantages over STL for most cases.
+
+4. Trade-offs:
+   - While Qsort shows slightly better memory usage for larger inputs, the difference is minimal and doesn't outweigh STL's other advantages.
+   - The other programs (Merge and Quick) don't offer significant performance benefits over the standard library version, making the additional              implementation effort unnecessary for most use cases.  
